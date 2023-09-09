@@ -5,11 +5,61 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Penguin Fashion Using Tailwind CSS</title>
+  <!-- Tailwindcss CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google font  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .font-roboto {
+      font-family: 'Roboto', sans-serif;
+    }
+
+    .font-bebas-neue {
+      font-family: 'Bebas Neue', sans-serif;
+    }
+
+    .font-montserrat {
+      font-family: 'Montserrat', sans-serif;
+    }
+  </style>
+
 </head>
 
 <body>
-  <header>
-    <h1>This is a Heading Text for test</h1>
+
+
+  <header class="bg-[#FFFBF0] py-16">
+    <!-- Navbar Section -->
+    <nav></nav>
+    <!-- Banner Section -->
+    <section class="flex max-w-[1170px] mx-auto justify-between items-center">
+      <div class="max-w-md">
+        <h2 class=" font-bebas-neue text-[80px] text-[#363958] uppercase ">
+          <span class="text-[#FABE4C]">Be the Penguins</span>
+          <br>
+          of Winter
+        </h2>
+        <p class="font-roboto text-base text-[#3E3E3E] mb-2">Lorem Ipsum is simply dummy text of the printing
+          and typesetting industry.</p>
+        <button type="submit"
+          class="bg-[#85A019] py-4 px-8 text-white rounded-xl flex items-center gap-2 font-roboto text-base font-medium"><img
+            src="icons/shopping-cart 1.png" alt="" class="inline-block w-4">BUY
+          NOW</button>
+      </div>
+      <div>
+        <img src="images/model.png" alt="">
+      </div>
+    </section>
   </header>
   <main>
 
